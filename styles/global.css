@@ -1,0 +1,615 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+h1, h2 ,h3, h4, h5, h6{
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+p{
+  font-family: 'Roboto', sans-serif  !important;
+
+}
+
+
+
+:root {
+  --custom-color: #003a72;
+}
+
+.colorPicked {
+  color: var(--custom-color) !important;
+  fill: var(--custom-color) !important;
+}
+
+.bgColorPicked {
+  background-color: var(--custom-color) !important;
+  background-image: none !important;
+}
+.headerHome {
+  background: linear-gradient(-45deg, #003a72, var(--custom-color));
+  z-index: 999999;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+html body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+
+
+}
+
+
+.mainColorBg {
+  background-color: #003a72;
+}
+
+.halfScreen {
+  height: 50vh;
+}
+
+.textService h1 {
+  font-size: 30px !important;
+  font-weight: 900 !important;
+}
+
+.h75vh {
+  height: 75vh;
+}
+
+
+
+
+.underline{
+  text-decoration: none;  animation-duration: 300ms;
+
+}
+
+.underline:hover{
+  text-decoration: underline;
+  animation-duration: 300ms;
+}
+
+@media only screen and (min-width: 1280px) {
+  .pr{
+    padding-right: 3rem;
+  }
+  .pl{
+    padding-left: 3rem
+  }
+}
+
+
+.printSign {
+  min-width: 100vh;
+  min-height: 100vh;
+  opacity: 0.3;
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+}
+.printSignImage {
+  width: 100vh;
+  height: 100vh;
+}
+
+.h2ServiceColor {
+  color: #2973ba;
+}
+
+.serviceButton {
+  border-radius: 5px;
+  text-align: center;
+  background-color: #132c56;
+  color: white;
+}
+
+.rotateObject {
+  transform: rotate(45deg);
+}
+
+.maxWidthImage {
+  -webkit-transform: rotate(45deg) scale(1.3); /* Chrome 4+, Op 15+, Saf 3.1, iOS Saf 3.2+ */
+  -moz-transform: rotate(45deg) scale(1.3); /* Fx 3.5-15 */
+  -ms-transform: rotate(45deg) scale(1.3); /* IE 9 */
+  -o-transform: rotate(45deg) scale(1.3); /* Op 10.5-12 */
+  transform: rotate(45deg) scale(1.3);
+}
+.h-image-service {
+  height: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .h-image-service {
+    height: 570px;
+  }
+}
+
+.printRotate {
+  top: 50%;
+  left: -0%;
+  transform: translate(-50%, -50%);
+  min-width: 100vh;
+  opacity: 1;
+  height: 100vh;
+}
+
+.circleEnlarge{
+  height: 10%;
+  width: 10%;
+  position: absolute;
+  background-color: #003a72;;
+  top: 50%;
+  left: 50%;
+  border-radius: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1280px) {
+  .textService1 {
+    position: absolute;
+    left: 0%;
+    top: -12%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+ 
+
+  .imageService {
+    position: absolute;
+    left: 0%;
+    top: -40%;
+    right: 0%;
+    z-index: 9899;
+    bottom: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  .scroller {
+    height: 100vh;
+  }
+}
+
+
+.blogImage{
+  left: 50%;
+-webkit-transform: translate(-50%);
+transform: translate(-50%,);
+bottom: 0%;
+z-index: 99;
+}
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} /* ---- stats.js ---- */
+
+
+
+/* BLOG CSS */
+.blogCard {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+
+}
+
+.blogCard img {
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.blogCard .overlay {
+  background-image: linear-gradient(to right, #003a72, #00264a);
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  transition-duration: 0.3s;
+}
+.blogCard .overlay:hover {
+  transition-duration: 0.3s ;
+  opacity: 0;
+  transform: scale(1.5);
+
+}
+
+.blogCard:hover{
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+
+}
+
+.blogCard h3 {
+  font-weight: 700;
+  color: white;
+}
+
+.printSignBlog img {
+  animation: MovingPrintSign 50s linear infinite;
+}
+
+@keyframes MovingPrintSign {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+} ;
+
+/*BUTTON CSS*/
+.outlineButton{
+  border: solid 4px #132C56;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition-duration: 300ms;
+
+}
+
+.outlineButton:hover{
+  border: solid 4px transparent;
+  background-color: #132C56;
+  border-radius: 500px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;  transition-duration: 300ms;
+
+}
+
+.chipButton{
+  border-radius: 99999px;
+  background-color: #132C56;
+  color: white;
+
+  font-weight: 500;
+  transition-duration: 300ms;
+
+}
+
+.chipButton:hover{
+  background-color: #132C56;
+  border-radius: 99999px;
+  color: white;
+  transform: scale(1.05);
+  font-weight: 500;  transition-duration: 300ms;
+
+}
+
+/*CONTACT CSSS*/
+
+
+@media only screen and (max-width: 1280px) {
+
+  .contactBg {
+  background-color: #003a72;
+  }
+  }
+  
+  
+  .bar{
+  height: 5px;
+  width: 100%;
+  }
+  
+  .thinBar{
+    height:1px;
+    width: 100%;
+  
+    background-color: rgba(255, 255, 255, 0.692);
+  
+  }
+  .thickBar{
+    height: 5px;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+  transition-duration: 300ms;
+  }
+  
+  .beginAdventure{
+    letter-spacing: 2px !important;
+  
+  }
+  .beginAdventure:hover > .bar > .thickBar{
+    height: 5px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    transition-duration: 300ms;
+  }
+
+.font-bolder{
+  font-weight: bold !important;
+}
+
+
+.copyright h6{
+  color: grey;
+  font-size: 1rem;
+}
+
+/*HEADER CSS*/
+:root {
+  --custom-color: #003a72;
+}
+
+.colorPicked {
+  color: var(--custom-color) !important;
+  fill: var(--custom-color) !important;
+}
+
+.bgColorPicked {
+  background-color: var(--custom-color) !important;
+  background-image: none !important;
+}
+.headerHome {
+  background: linear-gradient(-45deg, #003a72, var(--custom-color));
+  z-index: 999999;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+.redBut {
+  background-color: #ee6352;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  -webkit-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+}
+.blueBut {
+  background-color: #08b2e3;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  -webkit-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+}
+.yelBut {
+  background-color: #f2dc5d;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  -webkit-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+}
+.greBut {
+  background-color: #17bebb;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  -webkit-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+}
+.pinkBut {
+  background-color: #ff66b3;
+  height: 50px;
+  width: 50px;
+  border-radius: 999px;
+  -webkit-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 6px 14px 2px rgba(0, 0, 0, 0.29);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.headerHomeStatic {
+  background: linear-gradient(-45deg, #003a72, #05294b);
+  z-index: 999999;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+.imageLarge {
+  position: absolute;
+  left: 50%;
+  z-index: 6;
+  height: auto;
+  padding: 100px;
+  transform: translate(-50%, -50%);
+}
+.imageLargeBg {
+  position: absolute;
+  left: 50%;
+  z-index: 5;
+  height: auto;
+  padding: 100px;
+  transform: translate(-50%, -39%);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  animation: animate 1s forwards;
+  z-index: 9999999;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes animateBegone {
+  0% {
+    transform: translateY(-0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.modal.begone{
+  display: block;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  animation: animateBegone 1s forwards;
+  z-index: 9999999;
+
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/*MENU CSS*/
+.backgroundMenu{
+  background: linear-gradient(-45deg, #003a72, var(--custom-color));
+
+}
+
+.hamburger{
+  background-color: var(--custom-color);
+}
+
+.listMenu{
+  letter-spacing: 5px;
+  
+}
+
+
+
+/*QUERRRIESS*/
+
+
+@media screen and (min-width: 1440px) {
+  .circleEnlarge{
+    height: 10% ;
+    width: 10%  ;
+    position: absolute;
+    background-color: #003a72;;
+    top: 50%;
+    left: 50%;
+    border-radius: 500;
+  
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .circleEnlarge{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    background-color: #003a72;;
+    top: 50%;
+    left: 50%;
+    border-radius: 500;
+  
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .circleEnlarge{
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    background-color: #003a72;;
+    top: 50%;
+    left: 50%;
+    border-radius: 500;
+  
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .circleEnlarge{
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    background-color: #003a72;;
+    top: 50%;
+    left: 50%;
+    border-radius: 500;
+  
+  }
+}

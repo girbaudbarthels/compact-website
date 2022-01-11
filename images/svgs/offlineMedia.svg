@@ -1,0 +1,21 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg"  width="123" height="123" viewBox="0 0 123 123">
+
+
+
+
+  <g id="Group_10" data-name="Group 10" transform="translate(-944 -1557)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(944 1557)" fill="none" stroke="var(--custom-color)" stroke-width="5">
+      <circle cx="61.5" cy="61.5" r="61.5" stroke="none"/>
+      <circle cx="61.5" cy="61.5" r="59" fill="none"/>
+    </g>
+    <g id="Icon_ionic-ios-print" data-name="Icon ionic-ios-print" transform="translate(970.452 1583.452)">
+      <path id="Path_14" data-name="Path 14" d="M9,18.758V49.333a2.453,2.453,0,0,0,2.446,2.446H45.69a2.453,2.453,0,0,0,2.446-2.446V18.758a2.453,2.453,0,0,0-2.446-2.446H11.446A2.453,2.453,0,0,0,9,18.758Z" transform="translate(6.605 15.191)" fill="var(--custom-color)"/>
+      <g id="Group_7" data-name="Group 7" transform="translate(3.375 3.375)">
+        <path id="Path_15" data-name="Path 15" d="M49.457,3.375H10.321A2.453,2.453,0,0,0,7.875,5.821V8.878a.613.613,0,0,0,.611.611h42.8a.613.613,0,0,0,.611-.611V5.821A2.453,2.453,0,0,0,49.457,3.375Z" transform="translate(1.909 -3.375)" fill="var(--custom-color)"/>
+        <path id="Path_16" data-name="Path 16" d="M62.155,7.875H8.343A4.892,4.892,0,0,0,3.375,12.66V39.321a5.022,5.022,0,0,0,4.968,4.938h2.37a1.227,1.227,0,0,0,1.223-1.223v-16.2a4.273,4.273,0,0,1,4.28-4.28H54.129a4.273,4.273,0,0,1,4.28,4.28v16.2a1.227,1.227,0,0,0,1.223,1.223h2.522a4.891,4.891,0,0,0,4.816-4.938V12.66A4.76,4.76,0,0,0,62.155,7.875Z" transform="translate(-3.375 1.909)" fill="var(--custom-color)"/>
+      </g>
+    </g>
+  </g>
+</svg>
